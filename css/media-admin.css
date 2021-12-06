@@ -6,11 +6,14 @@
     } 
 
     .nav-header__nav-menu-container {
+        max-width: 1400px;
         width: 97%;
         padding: 20px 0px 20px 0px;
     }
 
     .add-form {
+        max-width: 1400px;
+        display: flex;
         width: 97%;
     }
 
