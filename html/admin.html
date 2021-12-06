@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> 
+    <meta charset="UTF-8">
+
+    <title>UXEPRESS</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
+    <link href="../css/media-admin.css" rel="stylesheet">
+    <link rel="icon" href="../img/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Шапка страницы-->
+    <header class="nav-header">
+        <div class="nav-header__nav-menu-container">
+            <div class="nav-header_left-top">
+                <a href="index.html"><img src="../img/uxepress.svg" alt="logo"></a>
+                <span class="nav-header_left-top__slash"></span>
+                <span class="nav-header_left-top__text adaptation">Курьерская служба доставки</span>
+            </div>
+            <div class="nav-header_right-top">
+                <div class="nav-header_right-top__tel">
+                    <img class="nav-header_right-top__icon" src="../img/phone.svg" alt="phone">
+                    <span class="nav-header_right-top__text">8 (909) 023-12-51</span>
+                </div>
+                <div class="nav-header_right-top__login">
+                    <a href="index.html" class="nav-header_right-top__logout-button">Выход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Добавление новости-->
+    <main class="add-block">
+        <div class="add-form">
+            <div class="add-form__data">
+                <div class="add-form__headline"><b>Добавить новость</b></div>
+                <span class="add-form__subtitle">Введите текст новости, а так же приложите изображение (размер: 270x270px)</span>
+                <span class="add-form__error"></span>
+                <textarea class="add-form__textarea" placeholder="Введите текст новости"></textarea>
+                <span class="add-form__textarea-info"> </span>
+
+                <!--Добавление изображения-->
+                <div class="add-form__add-img">
+                    <div class="add-form__added">
+                        <!--Скрытый input-->
+                        <input class="add-form__upload-img" type="file">
+                        <div class="add-form__add-icon">
+                            <img src="../img/add_img.png" alt="image-icon.png"></div>
+                        <div class="add-form__add-img-text">+ Добавить изображение</div>
+
+                        <div class="add-form__uploaded-img">
+                            <img src="" class="add-form__uploaded-img-icon">
+                            <span class="add-form__uploaded-img-filename"></span>
+                            <img src="../img/close.png" alt="close-button.png" class="add-form__drop-img">
+                        </div>
+                    </div>
+                    <div class="add-form__format-error"></div>
+                </div>
+                <a class="add-form__submit">Применить</a>
+            </div>
+        </div>
+    </main>
+
+
+    <!--Контакты-->
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footer-box__logo"><a href="#"><img src="../img/uxepress.svg" alt="logo"></a></div>
+            <div class="useful-links">
+                <div class="useful-links__column">
+                    <a class="useful-links__link">
+                        <div>О компании</div>
+                    </a>
+                    <a class="useful-links__link">
+                        <div>Вакансии</div>
+                    </a>
+                    <a class="useful-links__link">
+                        <div>Клиенту</div>
+                    </a>
+                    <a class="useful-links__link">
+                        <div>Франчайзинг</div>
+                    </a>
+                </div>
+
+                <div class="useful-links__column">
+                    <a class="useful-links__link">
+                        <div>Доставка из Китая</div>
+                    </a>
+                    <a class="useful-links__link">
+                        <div>Все услуги</div>
+                    </a>
+                    <a class="useful-links__link">
+                        <div>Акции</div>
+                    </a>
+                </div>
+
+                <div class="contacts-list">
+                    <div class="contacts-list__column">
+                        <div class="contacts-list__info">
+                            <div>manager@uexpress.ru</div>
+                            <div class="contacts-list__line" id="center-row">115221, г. Челябинск, ул. Северная, д. 29-в</div>
+                            <div class="contacts-list__line">Мы работаем по 24 часа 5 дней в неделю</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/uploadFiles.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>

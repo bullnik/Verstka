@@ -1,0 +1,170 @@
+.add-block {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima Nova';
+} 
+
+.add-form__headline {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+    margin: 10% 0 0 0;
+    font-family: Proxima Nova Extra Bold, sans-serif;
+}
+
+.add-form__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Proxima Nova Regular, sans-serif;
+    margin-top: 1.5%;
+    margin-bottom: 2.5%;
+}
+
+.add-form__textarea {
+    margin-top: 3%;
+}
+
+.add-form__add-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.add-form__add-icon{
+    cursor: pointer;
+}
+
+.add-form__add-img-text {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    color: #2A496B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Proxima Nova Semibold, sans-serif;
+    min-width: 200px;
+    width: 100%;
+}
+
+.add-form__submit {
+    cursor: pointer;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 20%;
+    background-color: #E5E31F;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #2A4F71;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Proxima Nova Semibold, sans-serif;
+}
+
+.add-form__textarea {
+    width: 770px;
+    max-width: 770px;
+    height: 130px;
+    border: 1px solid #23415E;
+    border-radius: 6px;
+    padding: 1%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Proxima Nova Regular, sans-serif;
+    overflow: auto;
+}
+
+.add-form__upload-img {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+}
+
+.add-form__error {
+    height: 20px;
+    display: inline-block;
+    color: #F44336;
+    font-style: 16px;
+    font-family: Proxima Nova Regular, sans-serif;
+}
+
+.add-form__uploaded-img {
+    position: relative;
+    left: 15%;
+    top: 15%;
+    display: none;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-form__uploaded-img-icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 35px;
+}
+
+.add-form__uploaded-img-filename {
+    margin-right: 10px;
+    color: #000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Proxima Nova Regular, sans-serif;
+}
+
+.add-form__format-error {
+    display: inline-block;
+    color: #F44336;
+    font-style: 16px;
+    font-family: Proxima Nova Regular, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 15%;
+}
+
+.add-form__drop-img {
+    width: 18px;
+    height: 18px;
+}
+
+.add-form__textarea-info {
+    height: 15px;
+    width: 52%;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 12px;
+    color: #D0C9D6;
+    font-family: Proxima Nova Regular, sans-serif;
+}
+
+.add-form__data {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.add-form__added {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}

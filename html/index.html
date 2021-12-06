@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> 
+    <meta charset="UTF-8">
+    <title>UXEPRESS</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/media-main.css" rel="stylesheet">
+    <link rel="icon" href="../img/icon.png"/>
+    <!--Viewport - это видимая пользователю область веб-страницы. Т.е. это то, что может увидеть пользователь, не прибегая к прокрутке.
+    Атрибут name предназначен для того чтобы указать браузеру, какую именно информацию о странице хотим ему сообщить.
+    В данном случае эта информация касается viewport.
+    Первый параметр (width=device-width) отвечает за то, чтобы ширина видимой области веб-страницы равнялась CSS ширине устройству (device-width).
+    Данная ширина (CSS) - это не физическое разрешение экрана. Это некоторая величина независящая от разрешения экрана.
+    Она предназначена для того, чтобы мобильный адаптивный дизайн сайта отображался на всех устройствах одинаково независимо от их плотности пикселей экрана.
+    Второй параметр initial-scale - устанавливает первоначальный масштаб веб-страницы. Значение 1 означает то, что масштаб равен 100%.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Главная страница-->
+    <header class="nav-header">
+        <!--Шапка, состоящая из строки быстрого доступа и слайдера-->
+        <div class="nav-header__nav-menu-container">
+            <div class="nav-header_left-top">
+                <a href="index.html"><img src="../img/uxepress.svg" alt="logo"></a>
+                <span class="nav-header_left-top__slash"></span>
+                <span class="nav-header_left-top__text">Курьерская служба доставки</span>
+            </div>
+            <div class="nav-header_right-top">
+                <div class="nav-header_right-top__tel">
+                    <img class="nav-header_right-top__icon" src="../img/phone.svg" alt="phone">
+                    <div class="nav-header_right-top__text">8 (909) 023-12-51</div>
+                </div>
+                <div class="nav-header_right-top__login">
+                    <a href="#" class="nav-header_right-top__login-button">Вход</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Слайдер-->
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <div class="text-img">
+                        <div class="text">
+                            <div class="text-top">Срочная доставка день в день</div>
+                            <div class="text-center">Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</div>
+                            <div class="text-button">
+                                <div class="text-button__text"><a href="#" class="text-button__button"><b>Заказать доставку</b></a></div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="img__container" id="img1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="text-img">
+                        <div class="text">
+                            <div class="text-top">Подписание договора за 1 час</div>
+                            <div class="text-center">В течение часа наш курьер заберёт вашу посылку и подпишет с Вами договор о предоставлении услуг.</div>
+                            <div class="text-button">
+                                <div class="text-button__text"><a href="#" class="text-button__button"><b>Заказать доставку</b></a></div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="img__container" id="img2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="block"></div>
+                <label for="r1" class="bar slider__control slider__control_left" role="button"></label>
+                <label for="r2" class="bar slider__control slider__control_right slider__control_show" role="button"></label>
+            </div>
+<!--            <a class="slider__control slider__control_left" href="#" role="button"></a>-->
+<!--            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>-->
+        </div>
+
+    </header>
+
+
+    <!-- Вход -->
+    <div class="authorization-container">
+        <form class="authorization-form">
+            <img class="authorization-form__close" src="../img/close.png" alt="close-button.png">
+            <div class="authorization-form__title">
+                Авторизация
+            </div>
+            <div class="authorization-form__info">
+                Введите логин и пароль, чтобы войти в личный кабинет
+            </div>
+            <div class="authorization-form__input-error"></div>
+            <div class="authorization-form__input">
+                <input class="authorization-form__field" type="email" placeholder="Логин" id="email" required>
+                <input class="authorization-form__field" type="password" placeholder="Пароль" id="password" minlength="4" required>
+            </div>
+            <div class="authorization-form__submit">
+                <a href="#" class="authorization-form__button">Войти</a>
+            </div>
+        </form>
+    </div>
+   
+   <!--Основная часть-->
+    <main class="main-block">
+        <span class="five-steps">5 шагов к заявке</span>
+        <div class="five-steps__steps">
+            <div class="five-steps__step-container">
+                <div class="five-steps__step-image">
+                    <img src="../img/ico1.png" alt="calculte cost">
+                </div>
+                <span class="five-steps__text_top">Рассчитать стоимость</span>
+                <span class="five-steps__text_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div class="five-steps__step-container">
+                <div class="five-steps__step-image">
+                    <img src="../img/ico2.png" alt="call courier">
+                </div>
+                <span class="five-steps__text_top">Вызвать курьера</span>
+                <span class="five-steps__text_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div class="five-steps__step-container">
+                <div class="five-steps__step-image">
+                    <img src="../img/ico3.png" alt="pay">
+                </div>
+                <span class="five-steps__text_top">Оплатить услуги</span>
+                <span class="five-steps__text_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div class="five-steps__step-container">
+                <div class="five-steps__step-image">
+                    <img src="../img/ico4.png" alt="deal">
+                </div>
+                <span class="five-steps__text_top">Заключить договор</span>
+                <span class="five-steps__text_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+
+            <div class="five-steps__step-container">
+                <div class="five-steps__step-image">
+                    <img src="../img/ico5.png" alt="provide data">
+                </div>
+                <span class="five-steps__text_top">Предоставить данные</span>
+                <span class="five-steps__text_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.</span>
+            </div>
+        </div>
+    </main>
+
+   <!--Контакты-->
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footer-box__logo"><a href="#"><img src="../img/uxepress.svg" alt="logo"></a></div>
+            <div class="useful-links">
+                <div class="useful-links__column">
+                    <a href="#" class="useful-links__link">
+                        <div>О компании</div>
+                    </a>
+                    <a href="#" class="useful-links__link">
+                        <div>Вакансии</div>
+                    </a>
+                    <a href="#" class="useful-links__link">
+                        <div>Клиенту</div>
+                    </a>
+                    <a href="#" class="useful-links__link">
+                        <div>Франчайзинг</div>
+                    </a>
+                </div>
+
+                <div class="useful-links__column">
+                    <a href="#" class="useful-links__link">
+                        <div>Доставка из Китая</div>
+                    </a>
+                    <a href="#" class="useful-links__link">
+                        <div>Все услуги</div>
+                    </a>
+                    <a href="#" class="useful-links__link">
+                        <div>Акции</div>
+                    </a>
+                </div>
+
+                <div class="contacts-list">
+                    <div class="contacts-list__column">
+                        <div class="contacts-list__info">
+                            <div>manager@uexpress.ru</div>
+                            <div class="contacts-list__line" id="center-row">115221, г. Челябинск, ул. Северная, д. 29-в</div>
+                            <div class="contacts-list__line">Мы работаем по 24 часа 5 дней в неделю</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/auth.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>
