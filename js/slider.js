@@ -12,6 +12,7 @@ let multiItemSlider = (function () {
             step = itemWidth / wrapperWidth * 100, // величина шага (для трансформации)
             items = [], // массив элементов
             interval = 0,
+            activeSlide = 'left',
             configuration = { 
                 isCycling: true, // автоматическая смена слайдов
                 direction: 'right', // направление смены слайдов
@@ -67,6 +68,7 @@ let multiItemSlider = (function () {
                     items[nextItem].transform += items.length * 100;
                     items[nextItem].item.style.transform = 'translateX(' + items[nextItem].transform + '%)';
                 }
+                gavno();
                 transform -= step;
             }
             if (direction === 'left') {
@@ -77,9 +79,26 @@ let multiItemSlider = (function () {
                     items[nextItem].transform -= items.length * 100;
                     items[nextItem].item.style.transform = 'translateX(' + items[nextItem].transform + '%)';
                 }
+                gavno();
                 transform += step;
             }
             sliderWrapper.style.transform = 'translateX(' + transform + '%)';
+        }
+
+        let gavno = function () {
+            if (activeSlide == 'left') {
+                activeSlide = 'right';
+            } else {
+                activeSlide = 'left';
+            }
+            if (activeSlide == 'left') {
+                sliderControls[0].style.background = '#264160';
+                sliderControls[1].style.background = '#346491';
+            }
+            if (activeSlide == 'right') {
+                sliderControls[1].style.background = '#264160';
+                sliderControls[0].style.background = '#346491';
+            }
         }
 
         let cycle = function (direction) {
