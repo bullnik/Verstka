@@ -140,6 +140,7 @@ let multiItemSlider = (function () {
         // инициализация
         setUpListeners();
         cycle(configuration.direction);
+        sliderControls[0].style.background = '#264160';
 
         return {
             right: function () { // метод right
